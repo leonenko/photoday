@@ -44,10 +44,10 @@
     "Maxim Samoilov <nitive@icloud.com> (https://github.com/nitive)"
   ],
   "bugs": {
-    "url": "https://github.com/CSSSR/csssr-project-template/issues/",
+    "url": "https://github.com/r-leonenko/photoday/issues/",
     "email": "cpt@csssr.com"
   },
-  "homepage": "https://github.com/CSSSR/csssr-project-template/",
+  "homepage": "https://github.com/r-leonenko/photoday/",
   "engines": {
     "node": ">=4.0.0",
     "npm": ">=2.0.0"
