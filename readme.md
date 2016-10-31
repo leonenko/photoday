@@ -1,4 +1,4 @@
-# CSSSR Project Template
+# Project Template
 **Шаблон проекта для быстрого старта**
 
 
@@ -6,7 +6,7 @@
 
 ### Склонируй репозиторий и перейди в папку проекта
 ```
-git clone git@github.com:CSSSR/csssr-project-template.git new-project && cd new-project
+git clone git@github.com:r-leonenko/photoday.git new-project && cd new-project
 ```
 
 ### Установи модули
