@@ -1,0 +1,21 @@
+mixin pagination()
+	+b.pagination&attributes(attributes)
+		+e('span').text.sm-hidden
+			| Страницы:
+
+		+e('ul').list
+			+e('li').item
+				+e('a').link.active(href='#')
+					| 1
+			+e('li').item
+				+e('a').link(href='#')
+					| 2
+			+e('li').item
+				+e('a').link(href='#')
+					| 3
+			+e('li').item
+				+e('a').link(href='#')
+					| 4
+
+		+e('a').next(href='#')
+			| Следующая

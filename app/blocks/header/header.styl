@@ -1,0 +1,30 @@
+.header
+	display block
+	
+	&__title
+		color #010101
+		font 400 26px $playfair
+		text-transform uppercase
+		margin 25px 5px 15px
+		position relative
+		overflow hidden
+		line-height: 1em
+		
+
+		@media (min-width: 480px)
+			font-size 40px
+			margin: 40px 20px 25px
+
+		@media (min-width: 768px)
+			margin: 40px 34px 25px
+
+	&__line
+		width 1000px
+		height 2px
+		position absolute
+		bottom 3px
+		background-color #000
+		margin-left 15px
+		
+		@media (min-width: 480px)
+			// bottom 6px

@@ -1,0 +1,140 @@
+.photos
+	display block
+	overflow: hidden
+	padding-bottom: 18px
+	padding-left: 5px
+
+	@media (min-width: 480px)
+		padding-left 20px
+
+	@media (min-width: 768px)
+		padding-left 34px
+
+	&__item
+		float: left
+		width: 73px
+		height: 48px
+		margin: 0 5.5px 5px 0
+		overflow: hidden
+		text-decoration none
+		color #000
+
+		@media (min-width: 480px)
+			width 80px
+			height 53px
+			margin 0 10px 10px 0
+
+		@media (min-width: 768px)
+			width 160px
+			height 104px
+			margin 0 20px 20px 0
+
+		img
+			max-width 100%
+			display: block
+			
+		&.date
+			&:before
+				content ''
+				display inline-block
+				vertical-align middle
+				height 100%
+				width 0
+				
+			>.date
+				vertical-align middle
+				
+				.date__day
+					margin-top -1px
+					margin-bottom 0
+					
+				.date__triangle
+					top 8px
+					right 3px
+					
+					@media (min-width: 768px)
+						right -18px
+						top 15px
+			
+		&.banner
+			&.lg-banner
+				margin: 0 20px 10px 0
+				width: 160px
+				overflow: hidden
+				height: 243px
+				float right
+
+				@media (min-width: 768px)
+					margin-right: 34px
+					height: 238px
+
+				&__logo
+					display: block
+					width: 100%
+				
+			&.inline-banner
+				margin: 5px 5px 10px 0
+				width: 310px
+				float: left
+				overflow: hidden
+				height: 80px
+
+				.banner__logo
+					width: 100px
+					height: 80px
+					float: left
+
+				.banner__description
+					margin-left: 100px
+					display: block
+					height: 100%
+					background: #fbf6e8
+					padding: 5px 0 0 19px
+
+				.banner-type
+					color  #bebebe
+					font-size 10px
+					font-weight 700
+					margin-bottom: 3px
+					display: block
+
+				.banner-title
+					display: block
+					color  #000000
+					font-size 13px
+					font-weight 700
+					line-height 17px
+
+				.banner-text
+					display: block
+					color  #000000
+					font-size 12px
+					font-weight 400
+					line-height 17px
+					
+
+			&.adidas
+				margin: 0 20px 10px 0
+				width: 160px
+				overflow: hidden
+				height: 243px
+				float right
+
+				@media (min-width: 768px)
+					margin-right: 34px
+					height: 238px
+
+				img
+					display: block
+					width: 100%
+
+			&.coca-cola
+				margin: 0 34px 10px 0
+				width: 160px
+				overflow: hidden
+				height: 238px
+				float right
+
+				img
+					display: block
+					width: 100%

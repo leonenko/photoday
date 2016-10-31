@@ -1,0 +1,54 @@
+.date
+	display inline-block
+	vertical-align top
+	text-align center
+	position relative
+	font-family $notoserif
+	font-weight 400
+	line-height 24px
+	
+	&__day
+		font-size 18px
+		font-weight 400
+		line-height 24px
+		margin-bottom 3px
+		margin-top -6px
+		
+		@media (min-width: 768px)
+			font-size 36px
+			line-height 1em
+		
+	&__month
+		font-size 14px
+		font-weight 400
+		line-height 18px
+		text-transform lowercase
+		
+		@media (min-width: 768px)
+			font-size 18px
+			line-height 24px
+
+			&:after
+				right: -20px
+				top: -33px
+	
+	&__triangle
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 3px 0px 3px 3px
+		border-color: transparent transparent transparent #000000
+		content: ''
+		position: absolute
+		top 11px
+		right 0
+		
+	// @media (min-width: 480px)
+	// 	width 80px
+	// 	height 53px
+	// 	margin 0 10px 10px 0
+
+	// @media (min-width: 768px)
+	// 	width 160px
+	// 	height 104px
+	// 	margin 0 20px 20px 0

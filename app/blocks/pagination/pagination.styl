@@ -1,0 +1,50 @@
+.pagination
+	margin 0 5px 21px
+	display block
+	font-family $notosans
+
+	@media (min-width: 480px)
+		margin 0 20px 21px
+
+	@media (min-width: 768px)
+		margin -7px 34px 21px
+
+	&__list
+		display: inline-block
+		vertical-align: middle
+
+	&__item
+		display: inline-block
+		vertical-align: middle
+		text-align: center
+
+	&__link
+		display: block
+		line-height 34px
+		color  #000000
+		font-size 13px
+		font-weight 400
+		width 29px
+		text-decoration none
+
+		@media (min-width: 480px)
+			width 34px
+			margin-right: 6px
+
+		&.active
+			font-weight: 700
+			width 34px
+			background url("../images/active-page.png") center no-repeat
+
+	&__text
+		vertical-align: middle
+		margin-right: 20px
+		color: #838383;
+		font-size: 13px;
+		
+	&__next
+		margin-left: 15px
+		color  #000000
+		font-size 13px
+		text-decoration none
+		

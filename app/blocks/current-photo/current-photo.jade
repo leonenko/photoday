@@ -1,0 +1,15 @@
+include /blocks/date/date
+
+mixin current-photo()
+	+b.current-photo&attributes(attributes)
+		.date-label
+			+date('22', 'Сентября')
+
+		+e.image			
+			img(src="./assets/images/lg-photo1.jpg")
+
+		+e.descr
+			h4
+				| Мельницы маленькой деревушки Brandmill близи курортного австрийского города Mayerhoffen. 
+			p
+				| Фото: Reuters

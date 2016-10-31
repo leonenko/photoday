@@ -1,6 +1,21 @@
 extends /blocks/layout-default/layout-default
+include /blocks/container/container
+include /blocks/header/header
+include /blocks/current-photo/current-photo
+include /blocks/photos/photos
+include /blocks/pagination/pagination
 
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'Project Template';
 
 block content
+	+container()
+		+header()
+			+b('h2').header__title
+				| День в фото
+
+				+e.line
+
+		+current-photo()
+		+photos()
+		+pagination()

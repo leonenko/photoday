@@ -1,0 +1,84 @@
+include /blocks/date/date
+
+mixin photos()
+	+b.photos&attributes(attributes)
+		+e('a').item.banner.md-banner.sm-hidden.adidas(href="#")
+			img(src='./assets/images/md-photo1.jpg', alt='')
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo1.jpg', alt='')
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo2.jpg', alt='')
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo3.jpg', alt='')
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo4.jpg', alt='')
+
+		+e('a').item.date(href='#')
+			+date('20', 'Сентября')
+
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo5.jpg', alt='')
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo6.jpg', alt='')
+
+		+e('a').item.banner.inline-banner.md-hidden.lg-hidden(href='#')
+			img.banner__logo(src='./assets/images/banner-img.png', alt='')
+			.banner__description
+				.banner-type
+					| Рекламный тизер
+				.banner-title
+					| Театральная паутина
+				.banner-text
+					| Открытие новых сервисных центров немекого автопрома
+
+
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo7.jpg', alt='')
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo8.jpg', alt='')
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo9.jpg', alt='')
+
+		+e('a').item.date(href='#')
+			+date('19', 'Сентября')
+
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo10.jpg', alt='')
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo11.jpg', alt='')
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo12.jpg', alt='')
+
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo13.jpg', alt='')
+		+e('a').item.date(href='#')
+			+date('18', 'Сентября')
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo14.jpg', alt='')
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo15.jpg', alt='')
+
+		+e('a').item.banner.md-banner.sm-hidden.md-hidden.coca-cola(href="#")
+			img(src='./assets/images/md-photo2.jpg', alt='')
+
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo16.jpg', alt='')
+		+e('a').item(href='#')
+			img(src='./assets/images/sm-photo17.jpg', alt='')
+		+e('a').item.sm-hidden(href='#')
+			img(src='./assets/images/sm-photo18.jpg', alt='')
+	
+
+		+e('a').item.sm-hidden(href='#')
+			img(src='./assets/images/sm-photo19.jpg', alt='')
+		+e('a').item.sm-hidden(href='#')
+			img(src='./assets/images/sm-photo20.jpg', alt='')
+		+e('a').item.sm-hidden(href='#')
+			img(src='./assets/images/sm-photo21.jpg', alt='')
+		
+		+e('a').item.date.sm-hidden(href='#')
+			+date('17', 'Сентября')
+
+		+e('a').item.sm-hidden(href='#')
+			img(src='./assets/images/sm-photo22.jpg', alt='')
+

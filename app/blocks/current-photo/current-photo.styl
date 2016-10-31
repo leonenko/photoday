@@ -1,0 +1,97 @@
+.current-photo
+	display block
+	margin-bottom: 5px
+	margin-left 5px
+	position: relative
+	overflow: hidden
+	margin-right: 5px
+
+	@media (min-width: 480px)
+		margin-left: 20px
+		margin-bottom: 10px
+		margin-right: 20px
+
+	@media (min-width: 768px)
+		margin-left: 34px
+		margin-bottom: 16px
+		margin-right: 34px
+			
+
+	.date-label
+		position absolute
+		z-index 1
+		background url('../images/date-bg.png') repeat
+		width 80px
+		height 53px
+		position: absolute
+		top 6px
+		left 6px
+		text-align: center
+		
+		&:before
+			content ""
+			display inline-block
+			height 100%
+			vertical-align middle
+			width 0
+
+		@media (min-width: 480px)
+			top 10px
+			left: 10px
+
+		@media (max-width: 768px)
+			.date__day
+				margin-bottom 0
+				margin-top 0
+		
+		@media (min-width: 768px)
+			width: 160px
+			height: 104px
+			left: 20px
+			top: 20px
+		
+		.date
+			display inline-block
+			vertical-align middle
+			
+		.date__triangle
+			right -20px
+			
+	&__image
+		position relative
+		line-height 0
+		
+		&:after
+			content ''
+			display block
+			background url('../images/white-bottom-triangle.png') no-repeat
+			size 20px 10px
+			position absolute
+			bottom 0
+			left 50%
+			margin-left -10px
+			
+			@media (max-width: 768px)
+				display none
+			
+		img
+			max-width 100%
+			
+
+	&__descr
+		font-family $notosans
+		font-size 13px
+		line-height 18px
+		margin-top 13px
+		
+		h4
+			color black
+			font-weight 700
+			
+		p
+			color #acacac
+			font-weight 400	
+
+		@media (max-width: 768px)
+			display none
+			

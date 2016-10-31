@@ -1,0 +1,8 @@
+mixin date(day, month)
+	+b.date&attributes(attributes)
+		+e('h2').day
+			| #{day}
+		+e('p').month
+			| #{month}
+
+		+e.triangle
